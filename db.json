@@ -2,9 +2,72 @@
   "products": [
     {
       "name": "고구마",
-      "price": "1000",
+      "price": "5000",
       "imgUrl": "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2361853557BEA99F17",
-      "id": "1"
+      "id": "36f35f26-ee40-4407-b6d1-63b5fb703fca"
+    },
+    {
+      "name": "곤약 떡볶이",
+      "price": "100000",
+      "imgUrl": "https://t1.daumcdn.net/cfile/tistory/999242495D351E021F",
+      "id": "92ba4f3f-6a1a-41f6-a024-70e244fc1e58"
+    }
+  ],
+  "comments": [
+    {
+      "content": "Good",
+      "score": 4.5,
+      "productId": "c2ab6fa4-6dad-4ace-b39a-8d6dc809ea90",
+      "id": "c33ce46b-a9d2-4746-8635-da5aa721614a"
+    },
+    {
+      "content": "Very good",
+      "score": 4.5,
+      "productId": "c2ab6fa4-6dad-4ace-b39a-8d6dc809ea90",
+      "createdAt": "2020/08/09",
+      "id": "455a60b1-5d80-4b80-add2-0401379d9cfe"
+    },
+    {
+      "content": "보통입니다.",
+      "score": 2.5,
+      "productId": "c2ab6fa4-6dad-4ace-b39a-8d6dc809ea90",
+      "createdAt": "2020/08/09",
+      "id": "0e671b97-11cd-443f-8f05-a25280e7a37e"
+    },
+    {
+      "content": "최고에요",
+      "score": 5,
+      "productId": "c2ab6fa4-6dad-4ace-b39a-8d6dc809ea90",
+      "createdAt": "2020/08/09",
+      "id": "aaf6a308-2e06-44f3-940e-570f6e20eb6e"
+    },
+    {
+      "content": "좋아요",
+      "score": 5,
+      "productId": "36f35f26-ee40-4407-b6d1-63b5fb703fca",
+      "createdAt": "2020/08/09",
+      "id": "a2c4f34d-b715-4900-b716-c2f206cd320c"
+    },
+    {
+      "content": "먹을만 해요",
+      "score": 3,
+      "productId": "36f35f26-ee40-4407-b6d1-63b5fb703fca",
+      "createdAt": "2020/08/09",
+      "id": "86ce6d05-7187-42dd-a5d1-d9b0f4d3bcfc"
+    },
+    {
+      "content": "조금 매워요",
+      "score": 2,
+      "productId": "92ba4f3f-6a1a-41f6-a024-70e244fc1e58",
+      "createdAt": "2020/08/09",
+      "id": "fadcd15f-2b59-4dbd-a31a-ae310b15ce3b"
+    },
+    {
+      "content": "맛업다",
+      "score": 2.5,
+      "productId": "92ba4f3f-6a1a-41f6-a024-70e244fc1e58",
+      "createdAt": "2020/08/10",
+      "id": "22aa5b5a-d4f2-43b6-aabe-15f3cbd970ec"
     }
   ]
 }
