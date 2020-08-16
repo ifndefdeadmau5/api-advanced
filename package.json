@@ -15,9 +15,7 @@
     "date-fns": "^2.15.0",
     "graphql": "^15.3.0",
     "lodash-id": "^0.14.0",
-    "lowdb": "^1.0.0"
-  },
-  "devDependencies": {
+    "lowdb": "^1.0.0",
     "nodemon": "^2.0.4"
   }
 }
