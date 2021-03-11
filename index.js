@@ -11,8 +11,15 @@ db._.mixin(lodashId);
 
 const collection = db.get("products");
 const commentsCollection = db.get("comments");
+const usersCollection = db.get("users");
 
 const typeDefs = gql`
+  type User {
+    id: ID
+    email: String
+    password: String
+  }
+
   type Product {
     id: String
     name: String
@@ -41,6 +48,9 @@ const typeDefs = gql`
 
     # Comment
     addComment(content: String!, score: Float, productId: ID!): Comment
+
+    # User
+    login(email: String, password: String): User
   }
 `;
 
@@ -85,11 +95,25 @@ const resolvers = {
 
       return newItem;
     },
+    login: (_, { email, password }) => {
+      const user = usersCollection.find({ email }).value();
+      if (!user) {
+        throw new Error("User not exist");
+      }
+      if (user.password !== password) {
+        throw new Error("Invalid password");
+      }
+
+      return {
+        ...user,
+        token: JWT.sign(),
+      };
+    },
   },
 };
 
 const server = new ApolloServer({ typeDefs, resolvers });
 
-server.listen(process.env.PORT).then(({ url }) => {
+server.listen().then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
